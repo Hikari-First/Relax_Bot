@@ -6,11 +6,6 @@ import os
 
 bot = commands.Bot(command_prefix="!")
 
-@bot.event
-async def on_ready():
-    print("Бот активен")
-
-
 @bot.command()
 async def join(ctx):
     channel = ctx.message.author.voice.channel
