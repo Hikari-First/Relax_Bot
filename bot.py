@@ -23,5 +23,5 @@ async def play(ctx):
     vc.play(discord.FFmpegPCMAudio('song.mp3'), after=lambda e: print('done', e))
     vc.is_playing()
 
-token = os.environ.get('TOKEN')
+token = os.environ.get('BOT_TOKEN')
 bot.run(token)
