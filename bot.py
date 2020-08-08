@@ -4,7 +4,7 @@ from discord.utils import get
 import ffmpeg
 import os
 
-bot = commands.Bot(command_prefix="")
+bot = commands.Bot(command_prefix="!")
 
 @bot.event
 async def on_ready():
