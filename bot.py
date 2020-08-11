@@ -19,7 +19,7 @@ async def play(ctx):
         vc = await channel.connect()
         vc.play(discord.FFmpegPCMAudio('song.mp3'), after=lambda e: print('done', e))
         vc.is_playing()
-        await asyncio.sleep(203)
+        await asyncio.sleep(1)
 
 token = os.environ.get('BOT_TOKEN')
 bot.run(token)
