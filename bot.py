@@ -18,7 +18,7 @@ async def play(ctx):
     channel = ctx.message.author.voice.channel
     vc = await channel.connect()
     while True:
-        vc.play(discord.FFmpegPCMAudio('song.mp3'), after=lambda e: print('done', e))
+        vc.play(discord.FFmpegPCMAudio('song_1.mp3'), after=lambda e: print('done', e))
         vc.is_playing()
         await asyncio.sleep(205)
 
