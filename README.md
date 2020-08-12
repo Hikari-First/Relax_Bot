@@ -1,1 +1,1 @@
-Relax Bot
+Simple Discord Relax bot
